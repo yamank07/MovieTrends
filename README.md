@@ -23,7 +23,7 @@
 
 1. **TMDb API Key**:
    - Connect to any network other then JIO.
-   - Sign up for an account at [TMDb](https://www.themoviedb.org/).
+   - Sign up for an account at [TMDb](https://www.themoviedb.org/signup).
    - Generate an API key from the [API section](https://www.themoviedb.org/settings/api).
 2. **Appwrite Account**:
 
@@ -34,17 +34,17 @@
 
    - [Install Node.js](https://nodejs.org/).
 
-4. **Appwrite SDK**:
+4. **React, Tailwind CSS and Appwrite SDK**:
    - Install the Appwrite SDK for your frontend (React).
    - For React, run:
      ```bash
      npm install react-use
      ```
-     <!-- - For Tailwind, run: -->
+   - For Tailwind, run:
      ```bash
      npm install tailwindcss @tailwindcss/vite
      ```
-     <!-- - For Appwrite, run: -->
+   - For Appwrite, run:
      ```bash
      npm install appwrite
      ```
@@ -54,25 +54,32 @@
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yamank07/Proj1_MovieTrends.git
-   cd Proj1_MovieTrends
-
+   git clone https://github.com/yamank07/MovieTrends.git
+   cd MovieTrends
    ```
 
 2. **Set up your API Keys**:
 
-   - In the project folder, create a .env.local file and add your TMDb API key:
+   - In the project folder, create a **.env.local** file and add your TMDb API key:
+     ```bash
      VITE_TMDB_API_KEY=tmdb_api_key
-   - Set up your Appwrite project by creating an Appwrite API key, adding a database and collection.
+     ```
+   - Set up your Appwrite project by creating an Appwrite API key, adding a database and collection and add inside **.env.local** file.
+     ```bash
      VITE_APPWRITE_PROJECT_ID=appwrite_project_id
      VITE_APPWRITE_DATABASE_ID=appwrite_database_id
      VITE_APPWRITE_COLLECTION_ID=appwrite_collection_id
+     ```
 
 3. **Install dependencies (React JS)**:
+   ```bash
    npm install
+   ```
 
 4. **Start the project**:
+   ```bash
    npm run dev
+   ```
 
 5. **Access the app**:
    Open your browser and go to http://localhost:5173/
@@ -86,10 +93,10 @@
    The **Search Engine** allows users to search for movies by title. As the user types, the app will fetch relevant results from TMDb and display them in a user-friendly way, with movie posters, movie title, ratings, language and release year.
 
 3. **Example of Fetching Trending Movies**
-   Navigate to the component ../Proj1_MovieTrends/src/App.jsx in your project and search for fetchTrendingMovies() component.
+   Navigate to the component ../MovieTrends/src/App.jsx and search for fetchTrendingMovies() function component.
 
 4. **Example of Search Functionality**
-   Navigate to the component ../Proj1_MovieTrends/src/App.jsx in your project and search for fetchMovies() component.
+   Navigate to the component ../MovieTrends/src/App.jsx and search for fetchMovies() function component.
 
 5. **Displaying Movie Details**
    Each movie in the trending list or search results will display:
@@ -101,7 +108,7 @@
    - **Release Year**: The release year of the movie.
 
    Example of a movie card:
-   Navigate to the component ../Proj1_MovieTrends/src/Components/MovieCard.jsx in your project.
+   Navigate to the component ../MovieTrends/src/Components/MovieCard.jsx in your project.
 
 <!-- ## Contribution
 
